@@ -1,0 +1,9 @@
+2015-02-10  Todd Wylie  <wylie_t@PCF10-MAC366.local>
+
+	* Distribution: Split large files into smaller parts, for
+	placement on GitHub.
+
+2015-01-05  Todd Wylie  <twylie@linus242.gsc.wustl.edu>
+
+	* Distribution: Added content to the initial distribution.
+

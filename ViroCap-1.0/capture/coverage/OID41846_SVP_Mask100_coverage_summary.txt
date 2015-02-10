@@ -1,0 +1,7 @@
+Genome:Viruses_mask_100
+Offset in bases	0	100
+Target Bases	198855868	198855868
+Target Bases Covered	190615329	198151385
+Percent tagret bases covered	95.9	99.6
+Target bases not covered	8240539	704483
+Percent target bases not covered	4.1	0.4

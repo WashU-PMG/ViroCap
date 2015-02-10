@@ -1,0 +1,210 @@
+
+                                  ViroCap v1.0
+                                  ============
+
+Author: Todd Wylie
+Date: 2015-01-05 Mon
+
+
+Table of Contents
+=================
+1 VERSION
+2 AFFILIATION
+3 ABSTRACT
+4 MANIFEST
+5 FILE DESCRIPTIONS
+    5.1 Taxonomy
+    5.2 Coverage
+    5.3 Sequence
+6 AUTHORS
+7 CONTACT
+8 COPYRIGHT
+
+
+1 VERSION
+==========
+
+version 1.0 (20140428)
+(build: 2995ba4c963cc3872cc8d0d26b2a5ce7)
+
+2 AFFILIATION
+==============
+
+Washington University School of Medicine
+Department of Pediatrics
+
+3 ABSTRACT
+===========
+
+Metagenomic shotgun sequencing (MSS) is an important tool for characterizing
+viruses in clinical samples. It is culture-independent, requires no a priori
+knowledge of the viruses in the sample, and may provide extensive genomic
+information. However, MSS can be less sensitive than targeted molecular tests
+and may not yield sufficient sequence data for detailed analysis. We designed a
+sequence capture reagent, ViroCap, which targets viruses from 38 families that
+can infect vertebrate or invertebrate hosts. An innovative computational
+approach condensed 1 billion nucleotides of sequence into 200 million bases of
+unique target sequence suitable for production with Roche NimbleGen SeqCap EZ
+Developer Library. We tested ViroCap on samples containing 19 genera from 10
+families, and ViroCap correlated perfectly with molecular assays for virus
+detection. Depth- and breadth-of-coverage of the genomes were consistently
+improved, and the percentage of viral sequences in each sequence data set
+increased 10- to 11,000- fold post-capture. This approach will significantly
+improve MSS studies while reducing the cost of sequencing.
+
+4 MANIFEST
+===========
+
+AUTHORS
+CITATION
+ChangeLog
+LICENSE
+MANIFEST
+README
+VERSION
+capture/coverage/OID41846_SVP_Mask100_0bp_offset_coverage.part_1.gff
+capture/coverage/OID41846_SVP_Mask100_0bp_offset_coverage.part_1.gff.MD5
+capture/coverage/OID41846_SVP_Mask100_0bp_offset_coverage.part_2.gff
+capture/coverage/OID41846_SVP_Mask100_0bp_offset_coverage.part_2.gff.MD5
+capture/coverage/OID41846_SVP_Mask100_100bp_offset_coverage.gff
+capture/coverage/OID41846_SVP_Mask100_100bp_offset_coverage.gff.MD5
+capture/coverage/OID41846_SVP_Mask100_combined_coverage.txt
+capture/coverage/OID41846_SVP_Mask100_combined_coverage.txt.MD5
+capture/coverage/OID41846_SVP_Mask100_coverage_summary.bed
+capture/coverage/OID41846_SVP_Mask100_coverage_summary.bed.MD5
+capture/coverage/OID41846_SVP_Mask100_coverage_summary.txt
+capture/coverage/OID41846_SVP_Mask100_coverage_summary.txt.MD5
+capture/coverage/ViroCap.log
+capture/coverage/ViroCap.log.MD5
+capture/sequence/ViroCap_v1.0.part_1.fa
+capture/sequence/ViroCap_v1.0.part_1.fa.MD5
+capture/sequence/ViroCap_v1.0.part_2.fa
+capture/sequence/ViroCap_v1.0.part_2.fa.MD5
+capture/sequence/ViroCap_v1.0.part_3.fa
+capture/sequence/ViroCap_v1.0.part_3.fa.MD5
+capture/sequence/ViroCap_v1.0.part_4.fa
+capture/sequence/ViroCap_v1.0.part_4.fa.MD5
+capture/sequence/ViroCap_v1.0.part_5.fa
+capture/sequence/ViroCap_v1.0.part_5.fa.MD5
+capture/taxonomy/NBR_vertebrates.xlsx
+capture/taxonomy/NBR_vertebrates.xlsx.MD5
+capture/taxonomy/ViroCap_taxonomy.pdf
+capture/taxonomy/ViroCap_taxonomy.pdf.MD5
+capture/taxonomy/ViroCap_taxonomy_size.xlsx
+capture/taxonomy/ViroCap_taxonomy_size.xlsx.MD5
+
+5 FILE DESCRIPTIONS
+====================
+
+5.1 Taxonomy
+-------------
+
+1. capture/taxonomy/ViroCap_taxonomy.pdf
+
+Taxonomic distribution of target genomes included in ViroCap. Shown are the
+viral classes, families, and genera included in the sequence capture probe
+design. Taxonomic assignments were obtained from the NCBI Taxonomy Viewer
+
+2. capture/taxonomy/NBR_vertebrates.xlsx
+
+RefSeq and Genome Neighbor associations for the reference sequences used in the
+ViroCap design.
+
+3. capture/taxonomy/ViroCap_taxonomy_size.xlsx
+
+Description of the sequences included in the ViroCap design; includes a
+breakdown of associated sequence sizes.
+
+5.2 Coverage
+-------------
+
+1. capture/coverage/ViroCap.log
+
+Lookup-index associating accession ID's with NimbleGen capture design
+ID's. Includes the following fields:
+
+[1]  SEQ_ID
+[2]  ORIG_ID
+[3]  SEQ_LENGTH
+[4]  SEQ_STATUS
+[5]  UPPERCASE_ACGT
+[6]  LOWERCASE_ACGT
+[7]  NON-ACGT
+[8]  NON-IUPAC_DNA
+[9]  NUMBER_N
+[10] ID_STATUS
+[11] DUP_ID
+[12] SEQ_ID_LENGTH
+[13] INVALID_CHARACTERS
+
+2. capture/coverage/OID41846_SVP_Mask100_0bp_offset_coverage.part_[1-2].gff
+
+Design coverage GFF (General Feature Format) file, based on 0-bp-offset
+criteria.
+
+3. capture/coverage/OID41846_SVP_Mask100_100bp_offset_coverage.gff
+
+Design coverage GFF (General Feature Format) file, based on 100-bp-offset
+criteria.
+
+4. capture/coverage/OID41846_SVP_Mask100_combined_coverage.txt
+
+Combined (0-bp-offset and 100-bp-offset) summary file. Includes the following
+fields:
+
+[1] SEQ_ID
+[2] LENGTH
+[3] BASES_COVERED_0bp
+[4] BASES_NOT_COVERED_0bp
+[5] PCT_COVERAGE_0bp
+[6] BASES_COVERED_100bp
+[7] BASES_NOT_COVERED_100bp
+[8] PCT_COVERAGE_100bp
+
+5. capture/coverage/OID41846_SVP_Mask100_coverage_summary.bed
+
+Coverage spans provided in zero-based BED format. This file contains two
+tracks: 1) Target Regions; 2) NimbleGen Tiled Regions.
+
+6. capture/coverage/OID41846_SVP_Mask100_coverage_summary.txt
+
+A brief summary file indicating global capture coverage metrics.
+
+5.3 Sequence
+-------------
+
+capture/sequence/ViroCap_v1.0.part_[1-5].fa
+
+The full ViroCap sequence capture design, in FASTA format.
+
+6 AUTHORS
+==========
+
+Brandi N. Herter   <herter_b@kids.wustl.edu>
+Gregory A. Storch  <storch_g@kids.wustl.edu>
+Kristine M. Wylie  <wylie_k@kids.wustl.edu>
+Todd N. Wylie      <wylie_t@kids.wustl.edu>
+
+7 CONTACT
+==========
+
+For inquiries, please contact:
+
+     Todd Wylie
+     Instructor in Pediatrics
+     Department of Pediatrics and The Genome Institute
+     Washington University School of Medicine
+     Campus Box 8208
+     660 S. Euclid Avenue, St. Louis, MO 63110, USA
+     fax: (314) 286-2895
+     wylie_t@kids.wustl.edu
+     twylie@genome.wustl.edu
+
+8 COPYRIGHT
+============
+
+Copyright (C) 2014-2015 by Washington University School of Medicine. 
+All rights reserved.
+
+Licensing information forthcoming.
+
